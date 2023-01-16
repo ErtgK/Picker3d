@@ -1,7 +1,8 @@
-﻿using Data.ValueObjects;
+using Data.ValueObjects;
 using Keys;
 using Managers;
 using Sirenix.OdinInspector;
+using System;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -14,7 +15,6 @@ namespace Controllers.Player
         #region Serialized Variables
 
         [SerializeField] private PlayerManager manager;
-
         [SerializeField] private new Rigidbody rigidbody;
         [SerializeField] private new Collider collider;
 
@@ -23,17 +23,15 @@ namespace Controllers.Player
         #region Private Variables
 
         [ShowInInspector] private MovementData _data;
-
         [ShowInInspector] private bool _isReadyToMove, _isReadyToPlay;
-
-        private float _xValue;
+        [ShowInInspector] private float _xValue;
         private float2 _clampValues;
 
         #endregion
 
         #endregion
 
-        internal void SetMovementData(MovementData movementData)
+        internal void GetMovementData(MovementData movementData)
         {
             _data = movementData;
         }
@@ -50,10 +48,14 @@ namespace Controllers.Player
             {
                 MovePlayer();
             }
-            else
-            {
-                StopPlayerHorizontaly();
-            }
+            else StopPlayerHorizontaly();
+
+        }
+
+        private void StopPlayerHorizontaly()
+        {
+            rigidbody.velocity = new float3(0, rigidbody.velocity.y, _data.ForwardSpeed);
+            rigidbody.angularVelocity = float3.zero;
         }
 
         private void MovePlayer()
@@ -72,12 +74,6 @@ namespace Controllers.Player
             rigidbody.position = position;
         }
 
-        private void StopPlayerHorizontaly()
-        {
-            rigidbody.velocity = new float3(0, rigidbody.velocity.y, _data.ForwardSpeed);
-            rigidbody.angularVelocity = float3.zero;
-        }
-
         private void StopPlayer()
         {
             rigidbody.velocity = float3.zero;
@@ -93,7 +89,6 @@ namespace Controllers.Player
         {
             _isReadyToMove = condition;
         }
-
         internal void UpdateInputParams(HorizontalnputParams inputParams)
         {
             _xValue = inputParams.HorizontalInputValue;
@@ -104,8 +99,8 @@ namespace Controllers.Player
         internal void OnReset()
         {
             StopPlayer();
-            _isReadyToPlay = false;
             _isReadyToMove = false;
+            _isReadyToPlay = false;
         }
     }
 }

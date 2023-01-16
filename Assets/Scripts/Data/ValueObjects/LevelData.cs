@@ -8,9 +8,9 @@ namespace Data.ValueObjects
     {
         public List<PoolData> PoolList;
 
-        public LevelData(List<PoolData> poolList)
+        public LevelData(List<PoolData> datas)
         {
-            PoolList = poolList;
+            PoolList = datas;
         }
     }
 
