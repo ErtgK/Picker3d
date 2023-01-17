@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Cinemachine;
 using Signals;
 using UnityEngine;

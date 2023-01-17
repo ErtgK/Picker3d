@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+﻿fileFormatVersion: 2
+guid: e2d401ce429846f2b5093db705f4916b
+timeCreated: 1669652630
+=======
 fileFormatVersion: 2
-guid: 53f10b6cbf945a34bbce3633ad4cde71
+guid: c76155b10956e46418438fb3f0d5a81f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -9,3 +14,4 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+>>>>>>> origin/main

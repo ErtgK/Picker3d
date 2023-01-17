@@ -2,16 +2,24 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Picker
   m_Shader: {fileID: 4800000, guid: 733fefdcde0d35f4b822d2935d5a22f4, type: 3}
-  m_ShaderKeywords: _MK_ARTISTIC_PROJECTION_SCREEN_SPACE _MK_COLOR_GRADING_ALBEDO
-    _MK_ENVIRONMENT_REFLECTIONS_AMBIENT _MK_LIGHT_CEL _MK_RECEIVE_SHADOWS _MK_SPECULAR_ISOTROPIC
-    _MK_WRAPPED_DIFFUSE _RECEIVESHADOWS_ON _WRAPPEDLIGHTING_ON
+  m_ValidKeywords:
+  - _MK_ARTISTIC_PROJECTION_SCREEN_SPACE
+  - _MK_COLOR_GRADING_ALBEDO
+  - _MK_ENVIRONMENT_REFLECTIONS_AMBIENT
+  - _MK_LIGHT_CEL
+  - _MK_RECEIVE_SHADOWS
+  - _MK_SPECULAR_ISOTROPIC
+  - _MK_WRAPPED_DIFFUSE
+  m_InvalidKeywords:
+  - _RECEIVESHADOWS_ON
+  - _WRAPPEDLIGHTING_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -163,6 +171,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedTab: 0
     - _AlphaClip: 0
@@ -184,7 +193,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DiffuseSmoothness: 0.528
+    - _DiffuseSmoothness: 0.52
     - _DiffuseThresholdOffset: 0.25
     - _DirectIntensityOutline: 1
     - _Dissolve: 0
@@ -257,14 +266,14 @@ Material:
     - _Saturation: 0.92
     - _SingleIndirectColor: 0
     - _SketchMapScale: 1
-    - _Smoothness: 1
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _Specular: 1
     - _SpecularHighlights: 1
     - _SpecularIntensity: 1
     - _SpecularMapType: 0
     - _SpecularRoughness: 0.5
-    - _SpecularSmoothness: 0.368
+    - _SpecularSmoothness: 0.36
     - _SpecularThresholdOffset: 0.25
     - _SpecularToonSize: 0.25
     - _SpecularToonSmoothness: 0.05
@@ -303,7 +312,7 @@ Material:
     - _ZTest: 4
     - _ZWrite: 1
     m_Colors:
-    - _AlbedoColor: {r: 0.7169812, g: 0.1251335, b: 0.22311036, a: 1}
+    - _AlbedoColor: {r: 0.735849, g: 0.034620818, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 0.2971698, b: 0.2971698, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveBorderColor: {r: 1, g: 1, b: 1, a: 1}

@@ -184,7 +184,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DiffuseSmoothness: 0.528
+    - _DiffuseSmoothness: 0.52
     - _DiffuseThresholdOffset: 0.25
     - _DirectIntensityOutline: 1
     - _Dissolve: 0
@@ -257,14 +257,14 @@ Material:
     - _Saturation: 0.92
     - _SingleIndirectColor: 0
     - _SketchMapScale: 1
-    - _Smoothness: 1
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _Specular: 1
     - _SpecularHighlights: 1
     - _SpecularIntensity: 1
     - _SpecularMapType: 0
     - _SpecularRoughness: 0.5
-    - _SpecularSmoothness: 0.368
+    - _SpecularSmoothness: 0.36
     - _SpecularThresholdOffset: 0.25
     - _SpecularToonSize: 0.25
     - _SpecularToonSmoothness: 0.05
@@ -303,7 +303,7 @@ Material:
     - _ZTest: 4
     - _ZWrite: 1
     m_Colors:
-    - _AlbedoColor: {r: 0.20131719, g: 0.2454234, b: 0.49056602, a: 1}
+    - _AlbedoColor: {r: 1, g: 0.10849059, b: 0.40022558, a: 1}
     - _BaseColor: {r: 1, g: 0.2971698, b: 0.2971698, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveBorderColor: {r: 1, g: 1, b: 1, a: 1}
